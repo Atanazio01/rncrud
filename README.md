@@ -15,7 +15,8 @@
 <p align="center">
   <img alt="listUsers" src="https://github.com/Atanazio01/rncrud/blob/main/src/assets/images/listUsers.png" width="33%">
   <img alt="editUser" src="https://github.com/Atanazio01/rncrud/blob/main/src/assets/images/editUser.png" width="33%">
-  <img alt="createUser" src="https://github.com/Atanazio01/rncrud/blob/main/src/assets/images/deleteUser.png" width="33%">
+  <img alt="deleteUser" src="https://github.com/Atanazio01/rncrud/blob/main/src/assets/images/deleteUser.png" width="33%">
+  <img alt="createUser" src="https://github.com/Atanazio01/rncrud/blob/main/src/assets/images/editUser.png" width="33%">
 </p>
 
 ## 🛠 Tecnologias
