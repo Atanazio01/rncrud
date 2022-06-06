@@ -4,7 +4,7 @@ import {ListItem, Avatar, Button, Icon} from 'react-native-elements';
 import UsersContext from '../context/UserContext';
 
 export default props => {
-  const {state} = useContext(UsersContext);
+  const {state, dispatch} = useContext(UsersContext);
 
   const keyExtractor = (item, index) => index.toString();
 
@@ -13,7 +13,10 @@ export default props => {
       {
         text: 'Sim',
         onPress() {
-          console.warn('delete ' + user.id);
+          dispatch({
+            type: 'deleteUser',
+            payload: user,
+          });
         },
       },
       {
