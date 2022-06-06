@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {View, FlatList, Alert} from 'react-native';
 import {ListItem, Avatar, Button, Icon} from 'react-native-elements';
-import users from '../data/users';
+import UsersContext from '../context/UserContext';
 
 export default props => {
+  const {state} = useContext(UsersContext);
+
   const keyExtractor = (item, index) => index.toString();
 
   function confirmUserDeletion(user) {
@@ -46,7 +48,7 @@ export default props => {
     <View>
       <FlatList
         keyExtractor={keyExtractor}
-        data={users}
+        data={state.users}
         renderItem={getUserItem}
       />
     </View>
